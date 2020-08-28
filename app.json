@@ -1,13 +1,42 @@
 {
   "pages": [
-    "pages/home/home"
+    "pages/home/home",
+    "pages/category/category",
+    "pages/proflie/profile"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Lover",
+    "navigationBarTitleText": "小E博客",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
-  }
+  },
+  "tabBar": {
+    "selectedColor": "d81e06",
+    "borderStyle": "black",
+    "backgroundColor": "#F6F6F6",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "assets/imgs/tabbar/blog.png",
+      "selectedIconPath": "assets/imgs/tabbar/blog_active.png"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "text": "专题",
+      "iconPath": "assets/imgs/tabbar/category.png",
+      "selectedIconPath": "assets/imgs/tabbar/category_active.png"
+    },
+    {
+      "pagePath": "pages/proflie/profile",
+      "text": "我的",
+      "iconPath": "assets/imgs/tabbar/profile.png",
+      "selectedIconPath": "assets/imgs/tabbar/profile_active.png"
+    }
+  ]
+  },
+  "darkmode": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }
