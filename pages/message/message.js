@@ -1,28 +1,18 @@
-// 注册一个页面
-// pages/home/home.js
+// pages/message/message.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    time:new Date().toString(),
-    classArray:['推荐','计算机','研究生课','经济管理','文史哲','医药卫生','工学','理学','艺术设计','其他'],
-    currClassName:'推荐'
-  },
-  // 获取课程名称
-  getClassName(e){
-    console.log(e.detail.name)
-    this.setData({
-      currClassName:e.detail.name
-    })
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({ msg: 'Hello World' })
+
   },
 
   /**

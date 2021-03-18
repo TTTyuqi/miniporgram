@@ -1,17 +1,39 @@
+// 注册小程序入口
 App({
 
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch: function (options) {
-    
+    console.log("options",options)
+    // 获取用户的登录信息
+    wx.getUserInfo({
+      lang: 'zh_CN',
+      success:(res) => {
+        console.log('userInfor',res)
+      }
+    })
   },
 
   /**
    * 当小程序启动，或从后台进入前台显示，会触发 onShow
    */
   onShow: function (options) {
-    
+    //判断小程序的进入场景
+    console.log(options.scene)
+    switch(options.scene){
+        case 1001:
+
+          break;
+        case 1005:
+
+          break;
+        default:
+          
+          break;
+          
+
+    }
   },
 
   /**

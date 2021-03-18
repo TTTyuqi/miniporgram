@@ -1,0 +1,9 @@
+<!--components/ClassNavBarCom/classNavBar.wxml-->
+<scroll-view class="scroll-view_H" scroll-x>
+  <view class="nav-bg">
+        <view  class="nav-item" wx:for='{{classArray}}' wx:key="item" bindtap="currentClassClic" data-index="{{index}}" data-item="{{item}}">
+          <text class="{{currentIndex == index?'nav-wordavtive':''}}">{{item}}</text>
+          <view class="{{currentIndex == index?'nav-lineactive':'nav-noactive'}}"></view>
+        </view>
+  </view>
+</scroll-view>

@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "首页"
+  "usingComponents": {
+    "classnavbar":"/components/ClassNavBarCom/classNavBar",
+    "addmyclass":"/components/AddMyClassCom/addMyClassCom"
+  }
+
 }

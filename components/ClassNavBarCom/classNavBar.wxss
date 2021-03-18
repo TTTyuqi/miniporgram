@@ -1,0 +1,37 @@
+/* components/ClassNavBarCom/classNavBar.wxss */
+.scroll-view_H{
+  white-space: nowrap;
+}
+.nav-bg{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.nav-item{
+  flex-grow: 1;
+  text-align: center;
+  padding: 24rpx 10rpx;
+  font-size: 22rpx;
+  color: rgb(73, 71, 71);
+  font-weight: 650;
+  /* border-bottom:6rpx solid transparent; */
+}
+.nav-noactive{
+  width: 100%;
+  margin-top: 10rpx;
+  border-top: 4rpx solid transparent;
+  border-bottom: 4rpx solid transparent;
+}
+.nav-wordavtive{
+  color: #1296db;
+}
+.nav-lineactive{
+  width: 100%;
+  margin-top: 10rpx;
+  /* height: 6rpx; */
+  border-top:4rpx solid #1296db;
+  border-bottom: 4rpx solid #1296db;
+  border-radius:10rpx;
+  /* background-color: rgba(73, 125, 168,0.8); */
+}

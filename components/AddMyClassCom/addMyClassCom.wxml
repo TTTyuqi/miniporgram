@@ -1,0 +1,4 @@
+<!--components/AddMyClassCom/addMyClassCom.wxml-->
+<view class="add_my_class" bind:tap="addAcive" bind:touchstart="addEnd">
+    <image src="{{imgsrc}}" class='avatar'></image>
+</view>

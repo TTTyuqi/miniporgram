@@ -1,0 +1,11 @@
+/* components/AddMyClassCom/addMyClassCom.wxss */
+.add_my_class{
+  position: absolute;
+  bottom: 108rpx;
+  right: 44rpx;
+}
+.avatar{
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+}

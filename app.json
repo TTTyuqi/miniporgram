@@ -2,37 +2,45 @@
   "pages": [
     "pages/home/home",
     "pages/category/category",
+    "pages/message/message",
     "pages/proflie/profile"
   ],
   "window": {
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "小E博客",
+    "navigationBarTitleText": "在线课堂",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
   },
   "tabBar": {
-    "selectedColor": "d81e06",
+    "color":"#515151",
+    "selectedColor": "#1296db",
     "borderStyle": "black",
     "backgroundColor": "#F6F6F6",
     "list": [{
       "pagePath": "pages/home/home",
       "text": "首页",
-      "iconPath": "assets/imgs/tabbar/blog.png",
-      "selectedIconPath": "assets/imgs/tabbar/blog_active.png"
+      "iconPath": "assets/imgs/tabbar/classroom.png",
+      "selectedIconPath": "assets/imgs/tabbar/classroom_active.png"
     },
     {
       "pagePath": "pages/category/category",
-      "text": "专题",
-      "iconPath": "assets/imgs/tabbar/category.png",
-      "selectedIconPath": "assets/imgs/tabbar/category_active.png"
+      "text": "分类",
+      "iconPath": "assets/imgs/tabbar/fenlei.png",
+      "selectedIconPath": "assets/imgs/tabbar/fenlei_active.png"
+    },
+    {
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "assets/imgs/tabbar/tongzhi.png",
+      "selectedIconPath": "assets/imgs/tabbar/tongzhi_active.png"
     },
     {
       "pagePath": "pages/proflie/profile",
       "text": "我的",
-      "iconPath": "assets/imgs/tabbar/profile.png",
-      "selectedIconPath": "assets/imgs/tabbar/profile_active.png"
+      "iconPath": "assets/imgs/tabbar/wode.png",
+      "selectedIconPath": "assets/imgs/tabbar/wode_active.png"
     }
   ]
   },
