@@ -1,7 +1,9 @@
 {
   "usingComponents": {
     "classnavbar":"/components/ClassNavBarCom/classNavBar",
-    "addmyclass":"/components/AddMyClassCom/addMyClassCom"
+    "addmyclass":"/components/AddMyClassCom/addMyClassCom",
+    "searchbar":"/components/HeadSearchCom/headSearchCom",
+    "healfdialog":"/components/HalfScreenDialogCom/halfScreenDialogCom"
   }
 
 }

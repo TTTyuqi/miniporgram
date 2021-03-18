@@ -6,7 +6,7 @@
     "pages/proflie/profile"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#1296db",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "在线课堂",
     "backgroundColor": "#eeeeee",
