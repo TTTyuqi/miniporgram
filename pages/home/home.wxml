@@ -1,5 +1,6 @@
 <!--pages/home/home.wxml-->
-<searchbar/>
-<classnavbar classArray="{{classArray}}" bind:curClassName="getClassName"/>
-<addmyclass/>
-<healfdialog id="healfDialog"/>
+<vie>
+  <navBarSearch></navBarSearch>
+  <classnavbar classArray="{{classArray}}" bind:curClassName="getClassName"/>
+  <addmyclass/>
+</vie>

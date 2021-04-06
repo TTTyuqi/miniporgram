@@ -1,0 +1,4 @@
+<!--pages/searchview/searchview.wxml-->
+<view>
+  <headsearch></headsearch>
+</view>

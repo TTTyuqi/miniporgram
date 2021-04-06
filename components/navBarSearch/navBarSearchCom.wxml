@@ -1,0 +1,15 @@
+<!--components/navBarSearchCom.wxml-->
+<view style="height:{{navH}}px">
+ <view class='navbar-Content' style="padding-top:{{navT}}px"> 
+   <view class="logo-icon">
+     <text class="iconfont icon-kecheng"></text>
+   </view>
+   <navigator url="/pages/searchview/searchview" open-type="navigate" style="width:48%">
+   <view class="nav-search">
+        <view class="iconfont icon-sousuo seach-icon"></view>
+       
+          <view class="seache-info">搜索更多好课程</view>
+    </view>
+  </navigator>
+ </view>
+</view>

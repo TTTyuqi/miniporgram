@@ -1,18 +1,28 @@
 // 注册小程序入口
 App({
+  globalData:{
 
+  },
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch: function (options) {
-    console.log("options",options)
-    // 获取用户的登录信息
-    wx.getUserInfo({
-      lang: 'zh_CN',
+    // console.log("options",options)
+    let menuButtenObj = wx.getMenuButtonBoundingClientRect()
+    console.log("menuButtenObj",menuButtenObj)
+    wx.getSystemInfo({
       success:(res) => {
-        console.log('userInfor',res)
+        console.log("res",res)
+        let statusBarHeight = res.statusBarHeight,
+        navTop = menuButtenObj.top,//胶囊按钮与顶部的距离
+        navHeight = statusBarHeight + menuButtenObj.height + (menuButtenObj.top - statusBarHeight)*2;//导航高度
+        this.globalData.navHeight = navHeight
+        this.globalData.navTop = navTop
+      },
+      fail:(err) => {
+        console.log("err",err)
       }
-    })
+    }) 
   },
 
   /**

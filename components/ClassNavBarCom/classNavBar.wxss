@@ -24,7 +24,8 @@
   border-bottom: 4rpx solid transparent;
 }
 .nav-wordavtive{
-  color: #1296db;
+  /* 使用主题颜色 */
+  color: var(--themecolor)
 }
 .nav-lineactive{
   width: 100%;

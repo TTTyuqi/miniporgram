@@ -3,15 +3,19 @@
     "pages/home/home",
     "pages/category/category",
     "pages/message/message",
-    "pages/proflie/profile"
+    "pages/proflie/profile",
+    "pages/searchview/searchview"
   ],
+  "usingComponents": {
+    "navBarSearch":"/components/navBarSearch/navBarSearchCom"
+  },
   "window": {
     "navigationBarBackgroundColor": "#1296db",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "在线课堂",
-    "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
-    "enablePullDownRefresh": false
+    "enablePullDownRefresh": false,
+    "navigationStyle": "custom",
+    "backgroundColor": "#eeeeee"
   },
   "tabBar": {
     "color":"#515151",
