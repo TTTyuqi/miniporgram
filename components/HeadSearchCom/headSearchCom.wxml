@@ -15,25 +15,10 @@
 			</form>
             <view class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
 		</view>
-		<view class="weui-cells searchbar-result searchbar-position" wx:if="{{inputVal.length > 0}}">
-			<view class="weui-cell weui-cell_active weui-cell_access">
+		<view class="weui-cells searchbar-result searchbar-position" wx:if="{{textClass.length > 0}}">
+			<view class="weui-cell weui-cell_active weui-cell_access" wx:for="{{textClass}}" wx:key='item' bindtap="getOringClass" data-item='{{item}}'>
 				<view class="weui-cell__bd weui-cell_primary">
-					<view>实时搜索文本</view>
-				</view>
-			</view>
-			<view class="weui-cell weui-cell_active weui-cell_access">
-				<view class="weui-cell__bd weui-cell_primary">
-					<view>实时搜索文本</view>
-				</view>
-			</view>
-			<view class="weui-cell weui-cell_active weui-cell_access">
-				<view class="weui-cell__bd weui-cell_primary">
-					<view>实时搜索文本</view>
-				</view>
-			</view>
-			<view class="weui-cell weui-cell_active weui-cell_access">
-				<view class="weui-cell__bd weui-cell_primary">
-					<view>实时搜索文本</view>
+					<view class="orignclass_style">{{item}}</view>
 				</view>
 			</view>
 		</view>

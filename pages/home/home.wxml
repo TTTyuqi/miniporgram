@@ -1,6 +1,7 @@
 <!--pages/home/home.wxml-->
 <vie>
   <navBarSearch></navBarSearch>
+  <swiperavert></swiperavert>
   <classnavbar classArray="{{classArray}}" bind:curClassName="getClassName"/>
   <addmyclass/>
 </vie>

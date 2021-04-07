@@ -2,7 +2,6 @@
 const App = getApp();
 Component({
   options:{
-
     addGlobalClass: true
   },
   /**

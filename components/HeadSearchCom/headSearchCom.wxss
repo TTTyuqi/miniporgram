@@ -6,3 +6,12 @@
   position: absolute;
   background-color: white;
 }
+.orignclass_style{
+  padding: 10rpx;
+  color: #666;
+  background-color: white;
+  
+}
+/* .orignclass_style:increment{
+  background-color:var(--themegbcolor);
+} */

@@ -1,1 +1,29 @@
 /* pages/searchview/searchview.wxss */
+.hot_search{
+  border-top: 20rpx solid var(--themegbcolor);
+  padding:40rpx 30rpx; 
+}
+.hot_title{
+  font-size: 32rpx;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: #333;
+}
+.hot_class{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hot_contet{
+  width: 50%;
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: #555;
+}
+.hot-style{
+  color: red;
+  font-size: 32rpx !important;
+}

@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "classnavbar":"/components/ClassNavBarCom/classNavBar",
-    "addmyclass":"/components/AddMyClassCom/addMyClassCom"
+    "addmyclass":"/components/AddMyClassCom/addMyClassCom",
+    "swiperavert":"/components/SwiperAdvertCom/swiperAdvertCom"
   }
 
 }

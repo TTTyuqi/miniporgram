@@ -1,4 +1,15 @@
 <!--pages/searchview/searchview.wxml-->
 <view>
-  <headsearch></headsearch>
+  <headsearch inputVal='{{getClicClass}}'></headsearch>
+  <view class="hot_search">
+    <view class="hot_title">
+      <text>热门搜索</text>
+    </view>
+    <view class="hot_class">
+      <view class="hot_contet" wx:for="{{hotClass}}"  wx:key="item" bindtap="currentHotclass" data-index="{{index}}" data-item="{{item}}">
+        <text>{{item}}</text>
+        <text class="iconfont hot-icon" class="{{index < 5?'iconfont icon-huo hot-style':''}}"></text>
+      </view>
+    </view>
+  </view>
 </view>

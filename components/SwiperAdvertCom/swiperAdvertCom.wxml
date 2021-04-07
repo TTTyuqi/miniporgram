@@ -1,0 +1,24 @@
+<!--components/SwiperAdvertCom/swiperAdvertCom.wxml-->
+<view class="swpier-bg">
+  <!-- 
+    1.swiper标签默认带有样式
+    height：150 px ；width;100%
+    2.image 标签默认带有样式
+     height：240 px ；width：320px
+    3.设计图片和轮播图
+      1.先看图片的宽高
+      2.让图片高度自适应  宽度=100%
+      3.让swiper标签的高度和图片高度一样
+   -->
+    <swiper indicator-dots autoplay circular>
+      <swiper-item
+      wx:for="{{swpiperList}}"
+      wx:key='id'
+      >
+        <navigator>
+          <image  mode='widthFix' src="{{item.url}}"></image>
+        </navigator>
+
+      </swiper-item>
+    </swiper>
+</view>

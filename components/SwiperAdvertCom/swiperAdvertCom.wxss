@@ -1,0 +1,7 @@
+/* components/SwiperAdvertCom/swiperAdvertCom.wxss */
+swiper{
+  height: 300rpx;
+}
+image{
+  width: 100%;
+}
