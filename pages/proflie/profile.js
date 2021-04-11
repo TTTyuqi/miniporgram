@@ -1,18 +1,25 @@
 // pages/proflie/profile.js
+var app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    isLogin:false,
+    userInfo:{}
   },
-
+  //跳转到登陆授权页面
+  login(){
+    wx.navigateTo({
+      url: '/pages/login/login',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
@@ -26,7 +33,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log("app",app)
+    if(app.globalData.userInfo){
+        this.setData({
+          isLogin:true,
+          userInfo:app.globalData.userInfo
+        })
+    }
   },
 
   /**

@@ -1,0 +1,10 @@
+
+  <!-- 登录授权 -->
+<view class="long_bg">
+    <view wx:if='{{canIuse}}' class="long_info">
+        <view class="avatar_style"><open-data type="userAvatarUrl"></open-data></view>
+        <view class="name_style"><open-data type="userNickName"></open-data></view>
+        <button open-type="getUserInfo" bindtap='getUserInfo'>授权登陆信息</button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>

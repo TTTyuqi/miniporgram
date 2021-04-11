@@ -1,10 +1,12 @@
 {
   "pages": [
+    "pages/proflie/profile",
     "pages/home/home",
     "pages/category/category",
     "pages/message/message",
-    "pages/proflie/profile",
-    "pages/searchview/searchview"
+   
+    "pages/searchview/searchview",
+    "pages/login/login"
   ],
   "usingComponents": {
     "navBarSearch":"/components/navBarSearch/navBarSearchCom"

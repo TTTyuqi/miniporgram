@@ -4,7 +4,7 @@
    <view class="logo-icon">
      <text class="iconfont icon-kecheng"></text>
    </view>
-   <navigator url="/pages/searchview/searchview" open-type="navigate" style="width:48%">
+   <navigator url="/pages/searchview/searchview" hover-class="none" open-type="navigate" style="width:48%">
    <view class="nav-search">
         <view class="iconfont icon-sousuo seach-icon"></view>
        

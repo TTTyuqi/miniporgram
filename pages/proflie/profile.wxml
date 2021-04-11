@@ -1,2 +1,33 @@
 <!--pages/proflie/profile.wxml-->
-<text>pages/proflie/profile.wxml</text>
+<view class="profile_my">
+  <view class="profile_head" style="background-image: url('/assets/imgs/www.gif');background-repeat:no-repeat;background-position:50%,50%;background-size:cover">
+    <view class="head_cont">
+      <view class="cont_avatarUrl">
+        <!-- <text wx:if="{{!isLogin}}" class="iconfont icon-yonghutouxiang avarstyle"></text> -->
+        <image class="avatr_img" wx:if="{{!isLogin}}" src="/assets/imgs/touxiang.png" mode='widthFix'></image>
+        <image class="avatr_img" wx:else src="{{userInfo.avatarUrl}}" mode='mode="cover"'></image>
+      </view>
+      <view class="cont_login" wx:if="{{!isLogin}}">
+        <view class="but_login" hover-class="but_loginhover" bindtap="login">登陆</view>
+      </view>
+      <view class="cont_login" wx:else>
+        <view class="user_name">{{userInfo.nickName}}</view>
+        <view class="user_uid"></view>
+      </view>
+    </view>
+  </view>
+  <vie class="profile_cont">
+    <view class="weui-cells">
+            <navigator url="" class="weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <text class="iconfont icon-zhanghuxinxi icon-style"></text>
+                </view>
+                <view class="weui-cell__title">账户信息</view>
+                <view class="weui-cell__ft">
+                  说明文字
+                  <text></text>
+                </view>
+            </navigator>
+        </view>
+  </vie>
+</view>

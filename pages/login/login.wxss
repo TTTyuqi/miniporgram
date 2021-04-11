@@ -1,0 +1,21 @@
+/* pages/login/login.wxss */
+.long_bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 280rpx;
+}
+.long_info{
+  display: flex;
+  height: 480rpx;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.avatar_style{
+  width: 150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  overflow:hidden
+}
