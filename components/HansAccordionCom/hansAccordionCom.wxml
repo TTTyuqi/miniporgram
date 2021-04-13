@@ -1,0 +1,19 @@
+<!--components/HansAccordionCom/hansAccordionCom.wxml-->
+<view class="accord_bg">
+    <block wx:for="{{accorData}}" wx:key="quesTitle">
+      <view class="question_style" bindtap="clickAccord" data-index="{{index}}" hover-class="hoveclass">
+        <view>{{item.quesTitle}}</view>
+        <view>
+          <text class="iconfont {{currentIndex == index?'icon-arrow-bottom':'icon-iconmenuarrowright30x30'}}  icon-style">{{item.index}}</text>
+        </view>
+      </view>
+      <view class="answers_style {{currentIndex == index?'':'hidden-content'}}">
+        <block wx:for="{{item.answersCont}}" wx:key="conTitle">
+            <view class="answer_cont">
+              <view class="answer_title">{{item.conTitle}}?</view>
+              <view class="answer_contlist">{{item.anserQuestion}}</view>
+            </view>
+        </block>      
+      </view>
+    </block>
+</view>

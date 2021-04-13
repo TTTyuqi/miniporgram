@@ -1,6 +1,6 @@
 <!--pages/proflie/profile.wxml-->
 <view class="profile_my">
-  <view class="profile_head" style="background-image: url('/assets/imgs/www.gif');background-repeat:no-repeat;background-position:50%,50%;background-size:cover">
+  <view class="profile_head" style="background-image: url('/assets/imgs/bg.png');background-repeat:no-repeat;background-position:50%,50%;background-size:cover">
     <view class="head_cont">
       <view class="cont_avatarUrl">
         <!-- <text wx:if="{{!isLogin}}" class="iconfont icon-yonghutouxiang avarstyle"></text> -->
@@ -18,16 +18,80 @@
   </view>
   <vie class="profile_cont">
     <view class="weui-cells">
-            <navigator url="" class="weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="{{isLogin?'/pages/userinfo/userinfo':'/pages/login/login'}}" class="weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <text class="iconfont icon-zhanghuxinxi icon-style"></text>
+                    <text class="iconfont icon-ziyuan-copy icon-style"></text>
                 </view>
                 <view class="weui-cell__title">账户信息</view>
                 <view class="weui-cell__ft">
-                  说明文字
-                  <text></text>
+                  <view>{{loginstyle}}</view>
+                  <view><text class="iconfont icon-more icon-style"></text></view>
                 </view>
             </navigator>
-        </view>
+            <navigator url="{{isLogin?'/pages/userinfo/userinfo':'/pages/login/login'}}" class="weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <text class="iconfont icon-yonghu icon-style"></text>
+                </view>
+                <view class="weui-cell__title">个人资料</view>
+                <view class="weui-cell__ft">
+                  <view>头像/昵称/学习等信息</view>
+                  <view><text class="iconfont icon-more icon-style"></text></view>
+                </view>
+            </navigator>
+            <navigator url="{{isLogin?'/pages/userinfo/userinfo':'/pages/login/login'}}" class="weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <text class="iconfont icon-shimingzhi icon-style"></text>
+                </view>
+                <view class="weui-cell__title">实名认证</view>
+                <view class="weui-cell__ft">
+                  <view>{{loginstyle}}</view>
+                  <view><text class="iconfont icon-more icon-style"></text></view>
+                </view>
+            </navigator>
+     </view>
+     <view class="weui-cells">
+      <navigator url="{{isLogin?'/pages/userinfo/userinfo':'/pages/login/login'}}" class="weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <text class="iconfont icon-taolun icon-style"></text>
+                </view>
+                <view class="weui-cell__title">课程讨论</view>
+                <view class="weui-cell__ft">
+                  <view>参与的讨论帖都在这里</view>
+                  <view><text class="iconfont icon-more icon-style"></text></view>
+                </view>
+      </navigator>
+      <navigator url="{{isLogin?'/pages/userinfo/userinfo':'/pages/login/login'}}" class="weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <text class="iconfont icon-wodezhengshu icon-style"></text>
+                </view>
+                <view class="weui-cell__title">我的证书</view>
+                <view class="weui-cell__ft">
+                  <view>{{loginstyle}}</view>
+                  <view><text class="iconfont icon-more icon-style"></text></view>
+                </view>
+      </navigator>
+    </view>
+    <view class="weui-cells">
+      <navigator url="/pages/userhelper/userhelper" class="weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <text class="iconfont icon-bangzhuyufankui icon-style"></text>
+                </view>
+                <view class="weui-cell__title">帮助与反馈</view>
+                <view class="weui-cell__ft">
+                  <view>有疑问找帮助</view>
+                  <view><text class="iconfont icon-more icon-style"></text></view>
+                </view>
+      </navigator>
+      <navigator url="/pages/conectioncompy/conectioncompy" class="weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <text class="iconfont icon-lianxiwomen icon-style"></text>
+                </view>
+                <view class="weui-cell__title">联系我们</view>
+                <view class="weui-cell__ft">
+                  <view>商务合作、服务咨询等</view>
+                  <view><text class="iconfont icon-more icon-style"></text></view>
+                </view>
+      </navigator>
+    </view>
   </vie>
 </view>

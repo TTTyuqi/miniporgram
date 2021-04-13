@@ -1,4 +1,5 @@
 // pages/login/login.js
+import HttpRequest from '../../http/request'
 var app=getApp();
 Page({
 
@@ -22,6 +23,7 @@ Page({
       this.setData({
         userInfo: res.userInfo,
       }),
+      this.login()
       wx.navigateBack({
         delta: 1
       })
@@ -36,12 +38,28 @@ Page({
       wx.getUserProfile({
         desc: '授权用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
         success: (res) => {
+          console.log('授权用户信息',res)
           resolve(res)
         },
-        feild:(err) => {
+        fail:(err) => {
           reject(err)
         }
       })
+    })
+  },
+  //登录
+  login(){
+    wx.login({
+      success: (res) => {
+        if (res.code) {
+          //发起网络请求
+          HttpRequest.post('/users/user',{code:res.code}).then(res => {
+            console.log(res)
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
     })
   },
   /**
@@ -58,16 +76,6 @@ Page({
            userInfo:app.globalData.userInfo
          })
     } 
-    else if (this.data.canIuse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        that.setData({
-          userInfo: res.userInfo,
-        })
-      }
-    }
-   
   },
 
   /**

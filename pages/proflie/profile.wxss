@@ -35,15 +35,15 @@
   border-radius: 32rpx;
 }
 .but_loginhover{
-  background-color: rgba(136, 130, 130, 0.4);
+  background-color: rgba(136, 130, 130, 0.2);
 }
-weui-cell_active{
-  background-color: rgba(136, 130, 130, 0.4);
+.weui-cell_active{
+  background-color: rgba(247, 245, 245, 0.7);
 }
 
 .weui-cells{
   border-bottom:10rpx solid rgba(230, 224, 224, 0.5);
-  font-size: 34rpx;
+  font-size: 30rpx;
   color: rgb(66, 64, 64);
 }
 .weui-cell_access{
@@ -51,9 +51,12 @@ weui-cell_active{
   justify-content: flex-start;
   align-items: center;
   height: 100rpx;
+  border-bottom: 2rpx solid rgba(218, 209, 209, 0.4);
 }
 .weui-cell__hd{
   width: 70rpx;
+  line-height: 44rpx;
+  height: 44rpx;
   text-align: center;
   /* padding: 0 28rpx; */
 }
@@ -62,9 +65,15 @@ weui-cell_active{
   text-align: left;
 }
 .weui-cell__ft{
-  text-align: right;
+  /* text-align: right; */
   flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgba(185, 176, 176, 0.7);
+  font-size: 24rpx;
+  padding-right: 10rpx;
 }
 .icon-style{
-  font-size: 42rpx !important;
+  font-size: 40rpx !important;
 }

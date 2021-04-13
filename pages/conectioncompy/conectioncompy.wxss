@@ -1,0 +1,41 @@
+/* pages/conectioncompy/conectioncompy.wxss */
+.bg_view{
+  padding: 30rpx 24rpx ;
+}
+.title_head{
+  font-size: 42rpx;
+  font-weight: 600;
+  color: rgb(56, 55, 55);
+  letter-spacing: .1em;
+  margin-bottom: 38rpx;
+}
+.contect_cont{
+  margin-bottom: 30rpx;
+}
+.cont_one{
+  margin-bottom: 28rpx;
+}
+.head_tab{
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 460;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+  letter-spacing: .1em;
+}
+.head_cont{
+  font-size: 26rpx;
+  font-weight: 346;
+  padding-left: 12rpx;
+  color: rgb(87, 86, 86);
+}
+.info_one{
+  letter-spacing: .1em;
+  line-height: 46rpx;
+}
+.phone_col{
+  color: var(--themecolor);
+}
+.cont_tip{
+  font-size: 26rpx;
+}

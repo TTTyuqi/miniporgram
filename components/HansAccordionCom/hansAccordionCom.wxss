@@ -1,0 +1,42 @@
+/* components/HansAccordionCom/hansAccordionCom.wxss */
+.accord_bg{
+  padding: 35rpx 30rpx;
+}
+.hoveclass{
+  background-color: rgba(247, 245, 245, 0.7);
+}
+.question_style{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 48rpx;
+  color: rgb(73, 71, 71);
+  font-weight: 600;
+  padding: 28rpx 0;
+  border-bottom: 2rpx solid rgba(223, 213, 213,.6);
+}
+.icon-style{
+  font-size: 58rpx;
+}
+.answers_style{
+  transition: all 0.5s ease;
+  /* text-indent: 20rpx; */
+  display: block;
+}
+.hidden-content {
+  /* 主要利用的是display:none实现隐藏 */
+  display: none;
+}
+.answer_cont{
+  padding: 25rpx 0;
+  border-bottom: 2rpx solid rgba(223, 213, 213,.6);
+}
+.answer_title{
+    font-size: 34rpx;
+    color: rgba(43, 43, 43, 1);
+    margin-bottom: 10rpx;
+}
+.answer_contlist{
+  font-size: 26rpx;
+  color: rgb(129, 128, 128);
+}

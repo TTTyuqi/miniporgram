@@ -1,0 +1,64 @@
+<!--pages/conectioncompy/conectioncompy.wxml-->
+<view class="bg_view">
+  <view class="title_head">联系我们</view>
+  <view class="contect_cont">
+      <view class="cont_one">
+        <view class="head_tab">
+          <view>【主站技术服务】账号问题、功能障碍、证书问题、建议&帮助</view>
+        </view>
+        <view class="head_cont">
+          <view class="info_one">电子邮箱: suppor@xuetangx.com</view>
+          <view class="info_one">咨询QQ: 756683214</view>
+          <view class="info_one">官方QQ群: 756683</view>
+          <view class="info_one">联系电话: <text class="phone_col">010 8215 2567</text>(服务时间： 周一至周五9:00~12:00；13:00~18:00)</view>
+        </view>
+      </view>
+      <view class="cont_one">
+        <view class="head_tab">
+          <view>【计算机类付费课程服务&合作】计算机训练营、认证项目服务支持与合作</view>
+        </view>
+        <view class="head_cont">
+          <view class="info_one">电子邮箱: suppor@xuetangx.com</view>
+          <view class="info_one">联系电话: <text class="phone_col">010 8215 2567</text>(服务时间： 周一至周五9:00~12:00；13:00~18:00)</view>
+        </view>
+      </view>
+      <view class="cont_one">
+        <view class="head_tab">
+          <view>【商科知识付费课程服务&合作】商科训练营服务、企业培训服务、考试类课程</view>
+        </view>
+        <view class="head_cont">
+          <view class="info_one">电子邮箱: suppor@xuetangx.com</view>
+          <view class="info_one">联系电话: <text class="phone_col">010 8215 2567</text>(服务时间： 周一至周五9:00~12:00；13:00~18:00)</view>
+        </view>
+      </view>
+      <view class="cont_one">
+        <view class="head_tab">
+          <view>【MOOC课程合作】课程上线服务</view>
+        </view>
+        <view class="head_cont">
+          <view class="info_one">电子邮箱: suppor@xuetangx.com</view>
+          <view class="info_one">联系电话: <text class="phone_col">010 8215 2567</text>(服务时间： 周一至周五9:00~12:00；13:00~18:00)</view>
+        </view>
+      </view>
+      <view class="cont_one">
+        <view class="head_tab">
+          <view>【学堂云和雨课堂技术支持】学校私有课程平台服务、雨课堂服务、学分课服务</view>
+        </view>
+        <view class="head_cont">
+          <view class="info_one">电子邮箱: suppor@xuetangx.com</view>
+          <view class="info_one">联系电话: <text class="phone_col">010 8215 2567</text>(服务时间： 周一至周五9:00~12:00；13:00~18:00)</view>
+        </view>
+      </view>
+      <view class="cont_one">
+        <view class="head_tab">
+          <view>【商务合作&媒体合作】采购咨询、商务合作、媒体合作</view>
+        </view>
+        <view class="head_cont">
+          <view class="info_one">电子邮箱: suppor@xuetangx.com</view>
+        </view>
+      </view>
+  </view>
+  <view class="cont_tip">
+    *温馨提示:为了更好更快的帮您解决问题。请在邮件中留下电话、账号、昵称、课程名称、详细问题描述、相关截图信息
+  </view>
+</view>

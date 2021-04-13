@@ -1,4 +1,5 @@
 // pages/proflie/profile.js
+import HttpRequest from '../../http/request'
 var app=getApp();
 Page({
 
@@ -7,6 +8,7 @@ Page({
    */
   data: {
     isLogin:false,
+    loginstyle:'未登录',
     userInfo:{}
   },
   //跳转到登陆授权页面
@@ -19,7 +21,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    HttpRequest.get('/users/user/5f686888a586494270c1f6b6'
+    ).then(res =>{
+      console.log("yonghu",res)
+    })
   },
 
   /**
@@ -37,6 +42,7 @@ Page({
     if(app.globalData.userInfo){
         this.setData({
           isLogin:true,
+          loginstyle:'当前登录状态:微信登录',
           userInfo:app.globalData.userInfo
         })
     }
