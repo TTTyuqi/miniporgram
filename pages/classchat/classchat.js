@@ -1,51 +1,44 @@
-// pages/proflie/profile.js
-import HttpRequest from '../../http/request'
-var app=getApp();
+// pages/classchat/classchat.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isLogin:false,
-    loginstyle:'未登录',
-    userInfo:{}
+    tabData:['我发布的','我赞评的'],//nav 数据
+   
+    categoryCur:0,// 当前nav列索引
   },
-  //跳转到登陆授权页面
-  login(){
-    wx.navigateTo({
-      url: '/pages/login/login',
-    })
-  },
+
+  	// 顶部tab切换事件
+	toggleCategory(e) {
+		console.log(1212)
+		// this.setData({
+		// 	duration: 0
+		// });
+		setTimeout(() => {
+			this.setData({
+				categoryCur: e.detail.index
+			});
+		}, 0);
+	},
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // HttpRequest.get('/users/user/5f686888a586494270c1f6b6'
-    // ).then(res =>{
-    //   console.log("yonghu",res)
-    // })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log("app",app)
-    if(app.globalData.userInfo){
-        this.setData({
-          isLogin:true,
-          loginstyle:'当前登录状态:微信登录',
-          userInfo:app.globalData.userInfo
-        })
-    }
+    
   },
 
   /**

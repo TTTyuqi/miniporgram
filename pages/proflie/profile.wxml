@@ -1,6 +1,6 @@
 <!--pages/proflie/profile.wxml-->
 <view class="profile_my">
-  <view class="profile_head" style="background-image: url('/assets/imgs/bg.png');background-repeat:no-repeat;background-position:50%,50%;background-size:cover">
+  <view class="profile_head">
     <view class="head_cont">
       <view class="cont_avatarUrl">
         <!-- <text wx:if="{{!isLogin}}" class="iconfont icon-yonghutouxiang avarstyle"></text> -->
@@ -50,7 +50,7 @@
             </navigator>
      </view>
      <view class="weui-cells">
-      <navigator url="{{isLogin?'/pages/userinfo/userinfo':'/pages/login/login'}}" class="weui-cell_access" hover-class="weui-cell_active">
+      <navigator url="{{isLogin?'/pages/classchat/classchat':'/pages/login/login'}}" class="weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <text class="iconfont icon-taolun icon-style"></text>
                 </view>

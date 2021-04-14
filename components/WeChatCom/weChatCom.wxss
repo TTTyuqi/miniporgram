@@ -1,0 +1,25 @@
+/* components/WeChatCom/weChatCom.wxss */
+/* pages/classchat/classchat.wxss */
+.scroll-view {
+  width: 100%;
+  white-space: nowrap;
+}
+.chat_nav{
+  font-size: 39rpx;
+  font-weight:550;
+  letter-spacing: .07em;
+  color: rgb(70, 68, 68);
+}
+.no_scrollnav{
+  display: inline-block;
+  text-align: center;
+}
+.nav_line{
+  width: 0rpx;
+  height: 8rpx;
+  border-radius: 10rpx;
+  /* background-color: var(--themecolor); */
+}
+.transition{
+  transition: width 0.3s, transform 0.3s; 
+}

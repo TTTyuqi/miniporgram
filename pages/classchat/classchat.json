@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "weChatNav":"/components/WeChatCom/weChatCom"
+  },
+  "navigationStyle":"default",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "课程讨论",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

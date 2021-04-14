@@ -3,7 +3,8 @@
   height: 300rpx;
   display: flex;
   align-items: flex-end;
-  /* background-image: url(""); */
+  background-color: wheat;
+  /* background-image: url('/assets/imgs/bg.png');background-repeat:no-repeat;background-position:50%,50%;background-size:cover */
 }
 .head_cont{
   display: flex;

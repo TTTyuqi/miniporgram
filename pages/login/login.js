@@ -23,7 +23,7 @@ Page({
       this.setData({
         userInfo: res.userInfo,
       }),
-      this.login()
+      // this.login()
       wx.navigateBack({
         delta: 1
       })

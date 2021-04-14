@@ -1,0 +1,7 @@
+<!--pages/classchat/classchat.wxml-->
+<vie>
+  <weChatNav 
+  tabData="{{tabData}}"
+  bindchangeNav="toggleCategory"
+  ></weChatNav>
+</vie>

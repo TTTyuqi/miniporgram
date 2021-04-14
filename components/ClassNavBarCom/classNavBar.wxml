@@ -1,9 +1,11 @@
 <!--components/ClassNavBarCom/classNavBar.wxml-->
-<scroll-view class="scroll-view_H" scroll-x>
+<scroll-view class="scroll-view_H" scroll-x 	 
+                      scroll-with-animation
+				              scroll-left="{{scrollLeft}}">
   <view class="nav-bg">
         <view  class="nav-item" wx:for='{{classArray}}' wx:key="item" bindtap="currentClassClic" data-index="{{index}}" data-item="{{item}}">
-          <text class="{{currentIndex == index?'nav-wordavtive':''}}">{{item}}</text>
-          <view class="{{currentIndex == index?'nav-lineactive':'nav-noactive'}}"></view>
-        </view>
+          <text class=" {{currentIndex == index?'nav-wordavtive':''}}">{{item}}</text>
+        </view>    
   </view>
+  <view class="nav-line {{needTransition?'nav-lineactive':''}}" style="width: {{lineWidth}}px;transform: translateX({{translateX}}px)"></view>
 </scroll-view>

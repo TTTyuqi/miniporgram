@@ -1,6 +1,5 @@
 {
   "pages": [
-   
     "pages/home/home",
     "pages/proflie/profile",
     "pages/category/category",
@@ -9,7 +8,8 @@
     "pages/login/login",
     "pages/userinfo/userinfo",
     "pages/conectioncompy/conectioncompy",
-    "pages/userhelper/userhelper"
+    "pages/userhelper/userhelper",
+    "pages/classchat/classchat"
   ],
   "usingComponents": {
     "navBarSearch":"/components/navBarSearch/navBarSearchCom"

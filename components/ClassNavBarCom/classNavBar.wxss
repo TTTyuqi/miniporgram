@@ -11,8 +11,8 @@
 .nav-item{
   flex-grow: 1;
   text-align: center;
-  padding: 24rpx 10rpx;
-  font-size: 22rpx;
+  margin: 18rpx 18rpx 8rpx 18rpx;
+  font-size: 26rpx;
   color: rgb(73, 71, 71);
   font-weight: 650;
   /* border-bottom:6rpx solid transparent; */
@@ -25,14 +25,18 @@
 }
 .nav-wordavtive{
   /* 使用主题颜色 */
-  color: var(--themecolor)
+  color: var(--themecolor);
+  transition: color 0.3s ease-in-out;
 }
-.nav-lineactive{
-  width: 100%;
-  margin-top: 10rpx;
-  /* height: 6rpx; */
-  border-top:4rpx solid #1296db;
-  border-bottom: 4rpx solid #1296db;
+.nav-line{
+  width: 0rpx;
+  /* border-top:4rpx solid #1296db;
+  border-bottom: 4rpx solid #1296db; */
+  background-color: #1296db;
+  height: 8rpx;
   border-radius:10rpx;
   /* background-color: rgba(73, 125, 168,0.8); */
+}
+.nav-lineactive{
+  transition: width 0.3s, transform 0.3s;
 }
