@@ -2,6 +2,18 @@
 <vie>
   <weChatNav 
   tabData="{{tabData}}"
+  getabCurindex="{{categoryCur}}"
   bindchangeNav="toggleCategory"
   ></weChatNav>
+  <swiper current="{{categoryCur}}" duration="{{duration}}" bindanimationfinish="animationFinish">
+    <swiper-item wx:for="{{categoryNavData}}" wx:key="index">
+      <scroll
+      requesting="{{requesting}}"
+      bindrefresh="refresh"
+      >
+
+      </scroll>
+    </swiper-item>
+  </swiper>
+
 </vie>

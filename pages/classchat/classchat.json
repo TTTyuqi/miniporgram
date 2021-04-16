@@ -1,6 +1,8 @@
 {
+  "disableScroll": true,
   "usingComponents": {
-    "weChatNav":"/components/WeChatCom/weChatCom"
+    "weChatNav":"/components/WeChatCom/weChatCom",
+    "scroll":"/components/ScollCom/scollCom"
   },
   "navigationStyle":"default",
   "navigationBarBackgroundColor": "#ffffff",

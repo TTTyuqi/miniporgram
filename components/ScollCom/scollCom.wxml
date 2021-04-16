@@ -1,0 +1,60 @@
+<!--components/ScollCom/scollCom.wxml-->
+<view>
+  <view id="success"
+		  class="success {{successShow ? 'success--show' : ''}} {{successTran ? 'success--tran' : ''}}"
+		  style="top: {{topSize}}rpx;color: {{color}}">
+		<view class="info">刷新成功</view>
+	</view>
+  <movable-area class="movable_area">
+      <movable-view
+      class="move_view"
+      style="height: calc(100vh + {{refreshSize}}rpx)"
+      bindchange="aresChange"
+      bindtouchend="touchEnd"
+      direction="vertical"
+      y="{{move}}"
+      >
+      <scroll-view
+        class="scro_view"
+        scroll-y
+        bindscroll="scroll"
+        enable-back-to-top="{{enableBackToTop}}"
+        scroll-top="{{scrollTop}}"
+        lower-threshold="{{80}}rpx"
+        bindscrolltolower="more"
+      >
+      <view id="refresh"
+					  class="scroll__refresh {{successShow ? 'scroll__refresh--hidden' : ''}}"
+            style="height: {{refreshSize}}rpx;padding: 20rpx 0;">
+            <view class="scroll__loading">
+						<view wx:if="{{refreshStatus == 1 || refreshStatus == 2}}" class="{{refreshStatus == 2 ? 'rotate' : ''}} arrow"></view>
+						<view wx:if="{{refreshStatus == 3}}" class="loading">
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+							<view class="loading__item"></view>
+						</view>
+            <view class="text" wx:if="{{refreshStatus == 1}}">下拉刷新</view>
+						<view class="text" wx:elif="{{refreshStatus == 2}}">松开更新</view>
+            <view class="text" wx:elif="{{refreshStatus == 3}}">加载中...</view>
+            </view>
+      </view>
+      <solt></solt>
+      <view wx:if="{{emptyShow}}" class="empty">
+					<image class="empty__image" src="{{emptyUrl}}"></image>
+					<view class="empty__text">{{emptyText}}</view>
+			</view>
+
+      </scroll-view>
+
+      </movable-view>
+  </movable-area>
+</view>

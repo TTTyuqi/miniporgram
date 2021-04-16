@@ -5,9 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    duration: 300,  // swiper-item 切换过渡时间
     tabData:['我发布的','我赞评的'],//nav 数据
-   
+    categoryNavData:['0','2'],//tab数据
     categoryCur:0,// 当前nav列索引
+    requesting:false
   },
 
   	// 顶部tab切换事件
@@ -21,7 +23,26 @@ Page({
 				categoryCur: e.detail.index
 			});
 		}, 0);
-	},
+  },
+  // 切换swiper-item动画结束时触发的方法
+  animationFinish(e){
+    // console.log("swiper-item",e)
+    this.setData({
+      categoryCur:e.detail.current
+    })
+  },
+  // 下拉刷新
+  refresh(){
+    this.setData({
+      requesting:true
+    })
+    console.log("下拉刷新·····")
+    setTimeout(() => {
+      this.setData({
+        requesting:false
+      })
+    },200)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

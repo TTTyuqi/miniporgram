@@ -74,6 +74,8 @@ Component({
 		 *  监听 tabCur 变化, 做对应处理
 		 */
 		tabCurChange(newVal, oldVal) {
+      // console.log('newVal',newVal)
+      // console.log('oldVal',oldVal)
 			this.scrollByIndex(newVal);
 		},
     // 点击对应的tab
@@ -90,7 +92,7 @@ Component({
        */
       scrollByIndex(tabCur, needTransition = true){
           let item = this.data.tabItems[tabCur]
-          console.log("item",item)
+          // console.log("item",item)
           if (!item) return;
           let itemWidth = item.width || 0,
             itemLeft = item.left || 0;

@@ -10,6 +10,7 @@
     "pages/conectioncompy/conectioncompy",
     "pages/userhelper/userhelper",
     "pages/classchat/classchat"
+    
   ],
   "usingComponents": {
     "navBarSearch":"/components/navBarSearch/navBarSearchCom"
