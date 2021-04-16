@@ -7,7 +7,7 @@ Page({
   data: {
     duration: 300,  // swiper-item 切换过渡时间
     tabData:['我发布的','我赞评的'],//nav 数据
-    categoryNavData:['0','2'],//tab数据
+    categoryNavData:['0','1'],//tab数据
     categoryCur:0,// 当前nav列索引
     requesting:false
   },

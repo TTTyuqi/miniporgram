@@ -5,9 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    classData:['课程列表','直播课程'],//nav 数据
+    categoryNavData:['0','1'],//tab数据
+    categoryCur:0,// 当前nav列索引
   },
 
+   	// 顶部tab切换事件
+	toggleCategory(e) {
+		console.log(1212)
+		// this.setData({
+		// 	duration: 0
+		// });
+		setTimeout(() => {
+			this.setData({
+				categoryCur: e.detail.index
+			});
+		}, 0);
+  },
   /**
    * 生命周期函数--监听页面加载
    */

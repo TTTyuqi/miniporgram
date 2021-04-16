@@ -1,2 +1,8 @@
 <!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view>
+  <weChatNav 
+  tabData="{{classData}}"
+  getabCurindex="{{categoryCur}}"
+  bindchangeNav="toggleCategory"
+  ></weChatNav>
+</view>

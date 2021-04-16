@@ -36,13 +36,13 @@
     },
     {
       "pagePath": "pages/category/category",
-      "text": "分类",
+      "text": "全部",
       "iconPath": "assets/imgs/tabbar/fenlei.png",
       "selectedIconPath": "assets/imgs/tabbar/fenlei_active.png"
     },
     {
       "pagePath": "pages/message/message",
-      "text": "消息",
+      "text": "学习",
       "iconPath": "assets/imgs/tabbar/tongzhi.png",
       "selectedIconPath": "assets/imgs/tabbar/tongzhi_active.png"
     },

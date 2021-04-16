@@ -1,2 +1,4 @@
 <!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view>
+  <navBarSearch></navBarSearch>
+</view>
