@@ -9,7 +9,8 @@
     "pages/userinfo/userinfo",
     "pages/conectioncompy/conectioncompy",
     "pages/userhelper/userhelper",
-    "pages/classchat/classchat"
+    "pages/classchat/classchat",
+    "pages/showvideo/showvideo"
     
   ],
   "usingComponents": {

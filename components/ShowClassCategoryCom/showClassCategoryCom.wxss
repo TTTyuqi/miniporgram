@@ -1,0 +1,21 @@
+/* components/ShowClassCategoryCom/showClassCategoryCom.wxss */
+.show_bg{
+  padding: 10rpx 0;
+}
+.category_head{
+  padding: 14rpx 16rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head_tatle{
+  /* flex-grow: 2; */
+  font-size: 38rpx;
+  font-weight: 600;
+  color: rgba(19, 18, 18, 0.9);
+}
+.head_more{
+  font-size: 28rpx;
+  font-weight: 300;
+  color: rgba(94, 89, 89, 0.9);
+}

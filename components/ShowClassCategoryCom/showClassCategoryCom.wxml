@@ -1,0 +1,11 @@
+<!--components/ShowClassCategoryCom/showClassCategoryCom.wxml-->
+<view class="show_bg">
+      <view class="category_head">
+          <view class="head_tatle">{{title}}</view>
+          <view class="head_midel"><slot name='"midel"'></slot></view>
+          <view class="head_more">
+           <slot name="exart"></slot>
+          </view>
+      </view>
+     <slot/>
+</view>

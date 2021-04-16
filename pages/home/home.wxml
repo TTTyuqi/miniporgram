@@ -1,7 +1,37 @@
 <!--pages/home/home.wxml-->
 <vie>
   <navBarSearch></navBarSearch>
+  <scroll-view
+    scroll-y
+    style="height: calc(100vh - {{navHeight}}px)"
+    >
   <swiperavert></swiperavert>
-  <classnavbar classArray="{{classArray}}" bind:curClassName="getClassName"/>
+  <showClassCategory>
+    <view class="more-style" slot="exart">
+      <view>更多</view>
+      <view class="iconfont icon-menu mentstyle"></view>
+    </view>
+      <view class="view-cont">
+      <block wx:for="{{vieoHotclass}}" wx:key="videoId">
+        <videoBgImg
+        videoId="{{item.videoId}}"
+        viedobgimg="{{item.videoBgImg}}"
+        title="{{item.videoIdName}}"
+        >
+        </videoBgImg>
+      </block>
+    </view>
+    </showClassCategory >
+    <showClassCategory title="好课推荐">
+      <view class="more-style" slot="exart">
+        <view>更多</view>
+        <view class="iconfont icon-menu mentstyle"></view>
+      </view>
+      <view>
+        <classnavbar classArray="{{classArray}}" bind:curClassName="getClassName"/>
+       </view>
+    </showClassCategory>
+ 
+  </scroll-view>
   <addmyclass/>
 </vie>

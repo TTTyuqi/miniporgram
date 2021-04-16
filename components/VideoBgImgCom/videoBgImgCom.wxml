@@ -1,0 +1,11 @@
+<!--components/VideoBgImgCom/videoBgImgCom.wxml-->
+<view>
+  <navigator url="/page/showvideo/showvideo?videoId={{videoId}}">
+    <view >
+      <image style="width:{{imgwhht}}rpx;height:{{imgwhht}}rpx;border-radius: 15rpx;" src="{{viedobgimg}}" mode="scaleToFill" lazy-load></image>
+    </view>
+    <view class="video_title"  style="width:{{imgwhht}}rpx;">{{title}}</view> 
+    <slot name="subVideoTitle"/>
+    <slot name="videoSchool"/>
+  </navigator>
+</view>

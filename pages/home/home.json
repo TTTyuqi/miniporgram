@@ -2,7 +2,9 @@
   "usingComponents": {
     "classnavbar":"/components/ClassNavBarCom/classNavBar",
     "addmyclass":"/components/AddMyClassCom/addMyClassCom",
-    "swiperavert":"/components/SwiperAdvertCom/swiperAdvertCom"
+    "swiperavert":"/components/SwiperAdvertCom/swiperAdvertCom",
+    "showClassCategory":"/components/ShowClassCategoryCom/showClassCategoryCom",
+    "videoBgImg":"/components/VideoBgImgCom/videoBgImgCom"
   }
 
 }

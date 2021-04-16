@@ -1,1 +1,16 @@
 /* pages/home/home.wxss */
+.more-style{
+  display: flex;
+  align-items: center;
+}
+.mentstyle{
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+.view-cont{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 8rpx 15rpx;
+}

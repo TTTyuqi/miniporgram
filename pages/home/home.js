@@ -1,14 +1,48 @@
 // 注册一个页面
 // pages/home/home.js
+const App = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    navHeight:App.globalData.navHeight,
     time:new Date().toString(),
     classArray:['推荐','计算机','研究生课','经济管理','文史哲','医药卫生','工学','理学','艺术设计','其他'],
-    currClassName:'推荐'
+    currClassName:'推荐',
+    vieoHotclass:[
+      {
+        videoId:"121212",
+        videoIdName:'java从入门到放弃维吾尔文二翁rwerw',
+        videoBgImg:"/assets/swiperimgs/1.jpg"
+      },
+      {
+        videoId:"2",
+        videoIdName:'c++从入门到放弃',
+        videoBgImg:"/assets/swiperimgs/2.jpg"
+      },
+      {
+        videoId:"3",
+        videoIdName:'c从入门到放弃',
+        videoBgImg:"/assets/swiperimgs/3.jpg"
+      },
+      {
+        videoId:"4",
+        videoIdName:'c++从入门到放弃',
+        videoBgImg:"/assets/swiperimgs/4.jpg"
+      },
+      {
+        videoId:"5",
+        videoIdName:'vue从入门到放弃',
+        videoBgImg:"/assets/swiperimgs/5.jpg"
+      },
+      {
+        videoId:"6",
+        videoIdName:'c#从入门到放弃',
+        videoBgImg:"/assets/swiperimgs/6.jpg"
+      }
+    ]
   },
   // 获取课程名称
   getClassName(e){
